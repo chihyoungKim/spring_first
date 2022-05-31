@@ -1,0 +1,16 @@
+package edu.biz.setter1;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import lombok.AllArgsConstructor;
+
+
+public class DevelopeApp {
+	static Develope develope;
+	public static void main(String[] args) {
+		new ClassPathXmlApplicationContext("setter1.xml")
+			.getBean("develope", Develope.class).coding();
+		
+	}
+}
